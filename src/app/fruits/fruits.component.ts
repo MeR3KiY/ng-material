@@ -53,11 +53,6 @@ export class FruitsComponent implements OnInit {
 
 
   joke: any = null;
-/*
-    if (joke.type == single) {
-      return this.joke;
-    }
-  }*/
 
   constructor(private fruitService: FruitService) { }
 

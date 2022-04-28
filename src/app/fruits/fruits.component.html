@@ -18,6 +18,11 @@
 </div>
 
 <br>
+<ng-container >
 <div class="joke" *ngIf="joke">
     RANDOM JOKE OF THE DAY: {{joke.category}} {{joke.type}} <br> {{joke.joke}} <br> A: {{joke.setup}} <br> B: {{joke.delivery}}
+    <br>
+    <button (click)="ngOnInit()">new joke</button>
 </div>
+
+</ng-container>

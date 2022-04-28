@@ -6,11 +6,13 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class DollarPipe implements PipeTransform {
 
   transform(dollar: string): any {
-    console.log(dollar)
-    return dollar + '$';
-
+    if(!dollar) {
+      return dollar;
+    } else {
+        console.log(dollar)
+        return dollar + '$';
+    }
+    
   }
-
-
 
 }
